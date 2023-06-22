@@ -3,8 +3,6 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const dotenv=require('dotenv').config()
 const bot = new TelegramBot(process.env.TelegramBot, { polling: true });
-// const openaiApiKey = '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';
-// const openaiApiKey = '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';
 
 
 async function getChatGPTResponse(message) {
